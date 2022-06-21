@@ -1,0 +1,204 @@
+/*import from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+/* Variables */
+:root{
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --left_panel-gradient: linear-gradient(to bottom right,#cc2e5d, #ff5858);
+    --mango-gradient : linear-gradient(to right, #ffa751, #ffe259);
+    --button-gradient : linear-gradient(to right,transparent 50%,#cc2e5d 50%, #ff5858);
+    --text-color: #F7F9F9;
+    --Montserrat: "Montserrat", cursive;
+    --Lobster: "Lobster", cursive;
+    --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+    --border-color: rgba(0,0,0,0.329);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--Montserrat);
+}
+
+.page-wrap{
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+/* ####  LEFT PANEL CSS   #### */
+
+.left-panel{
+    flex: 1 1 70.666%;
+    background-image:var(--left_panel-gradient);
+    display: flex;
+    flex-direction: column;   
+    
+}
+.left-panel .logo {
+   /* background-color: yellow;*/
+    padding:10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+}
+.left-panel .logo a{
+    text-decoration: none;
+    color: #4e4376;
+}
+.left-panel .work-flow{
+    /*border: 2px solid black;*/
+    padding: 20px 30px;
+    margin-left: 20px;
+    margin-top:45px;
+    position: relative;
+}
+.left-panel .work-flow h1{
+    color: whitesmoke;
+    font-size: 45px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    
+}
+.left-panel .work-flow .content{
+    padding: 10px 10px;
+    margin-left: 40px;
+}
+.left-panel .work-flow .content h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.left-panel .work-flow h1 #first-dot{
+    color: rgb(255, 251, 41);
+    font-size: 50px;
+}
+.left-panel .work-flow h1 #second-dot{
+    color:greenyellow;
+}
+.left-panel .work-flow h1 #third-dot{
+    color:blueviolet;
+}
+.left-panel .work-flow .content .lines h3{
+    font-size: 20px;
+
+}
+.left-panel .work-flow .content .lines #point{
+    color: rgb(166, 167, 166);
+}
+.left-panel .process-img img{
+    margin-left: 70px;
+    height: 200px;
+    width: 80%;
+    margin-top: -10px;
+}
+
+/*  #####  RIGHT PANEL CSS  ##### */
+
+.right-panel{
+    flex: 1 1 33.333% ;
+    padding: 15px;
+   
+}
+.right-panel h1{
+    color: #ff5858;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom:70px;
+}
+
+.right-panel h1 strong{
+    color: #cc2e5d;
+    font-weight: 900;
+    font-size: 44px;
+}
+.right-panel .animated-form{
+    margin-top: 100px;
+    /*border: 2px solid black;*/
+    width: 100%;
+    position: relative;
+    padding: 40px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.animated-form .form-group label{
+    position: relative;;
+    top:-33px;
+    left:0;
+    padding: 10px 0px;
+    font-size: 26px ;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+    font-family: var(--Montserrat);
+   
+    
+   
+}
+
+.animated-form .form-group .input{
+    display: block;
+    width: 100%;
+    padding: 0px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    font-size: 19px;
+    color: #666;
+    transition:  .4s ease-out;
+
+}
+
+.animated-form .form-group .input:focus + label,
+.animated-form .form-group .input:valid + label{
+    top:-50px;
+    left:0;
+    font-size: 18px;
+    color: #ff5858;
+}
+
+.animated-form .form-group:focus-within .input{
+    border-bottom-color: #ff5858;
+}
+.animated-form .form-group1 .input1{
+    font-size: 20px;
+    font-family: var(--Montserrat);
+    /*border:1px solid black;*/
+    width: 100%;
+    outline: none;
+    margin-bottom: 50px;
+    
+}
+.animated-form .form-group1 .input1:valid{
+    color: #ff5858;
+}
+
+
+.animated-form .btn button{
+    margin-top: 70px;
+    border: 2px solid #ff5858;
+    background-color:white;
+    padding: 10px 30px;
+    border-radius: 999px;
+    background-image:var(--button-gradient) ;
+    background-size: 200%;
+    color: #ff5858;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    
+    
+  
+  }
+.animated-form .btn button:hover{
+    color: #fff;
+    background-position: 100%;
+    border:3px solid #fff;
+    outline: none;
+  
+  }

@@ -1,0 +1,120 @@
+/*import from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+
+:root{
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --left_panel-gradient1: linear-gradient(to bottom right,#cc2e5d, #ff5858);
+    --mango-gradient : linear-gradient(to right, #ffa751, #ffe259);
+    --button-gradient : linear-gradient(to right,transparent 50%,#cc2e5d 50%, #ff5858);
+    --text-color: #F7F9F9;
+    --Montserrat: "Montserrat", cursive;
+    --Lobster: "Lobster", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    
+  }
+
+  body{
+    font-family: var(--Montserrat);
+}
+
+  
+  .wrapper{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 30px 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .wrapper .title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 26px;
+    color: #ff5858;
+    font-family:var(--Montserrat);  
+  }
+
+
+  .wrapper .form .form-group label{
+    position: relative;;
+    top:-30px;
+    left:0;
+    padding: 10px 0px;
+    font-size: 22px ;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+    font-family: var(--Montserrat);
+    
+   
+}
+
+.wrapper .form .form-group .input{
+    display: block;
+    width: 100%;
+    padding: 0px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    font-size: 22px;
+    color: #666;
+    transition:  .4s ease-out;
+
+}
+
+.wrapper .form .form-group .input:focus + label,
+.wrapper .form .form-group .input:valid + label{
+    top:-50px;
+    left:0;
+    font-size: 18px;
+    color: #ff5858;
+}
+
+.wrapper .form .form-group:focus-within .input{
+    border-bottom-color: #ff5858;
+}
+.wrapper .error{
+    font-family: var(--Lobster);
+}
+
+
+.wrapper .form .btn button{
+  
+  border: 2px solid #ff5858;
+  background-color:white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background-image:var(--button-gradient) ;
+  background-size: 200%;
+  color: #ff5858;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 30px;
+
+}
+.wrapper .form .btn button:hover{
+  color: #fff;
+  background-position: 100%;
+  border:3px solid #fff;
+
+}
+
+.wrapper .form .login_text a{
+  text-decoration: none;
+  font-family:var(--Montserratm);
+  color:#ff5858
+}

@@ -1,0 +1,132 @@
+/*import from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+/* Variables */
+:root{
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --left_panel-gradient: linear-gradient(to bottom ,#cc2e5d, #ff5858);
+    --mango-gradient : linear-gradient(to right, #ffa751, #ffe259);
+    --button-gradient : linear-gradient(to right,transparent 50%,#cc2e5d 50%, #ff5858);
+    --text-color: #F7F9F9;
+    --Montserrat: "Montserrat", cursive;
+    --Lobster: "Lobster", cursive;
+    --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+    --border-color: rgba(0,0,0,0.329);
+}
+
+body{
+    background-image: var(--left_panel-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--Montserrat);
+}
+.contain-table{
+    /*border: 1px solid black;*/
+    /*background-color: rgba(255, 255, 255, 0.274);*/
+    padding: 20px 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 150px;
+
+}
+.contain-table .tables{
+    /*border: 2px solid black;*/
+    font-size: 30px;
+    padding: 20px 20px;
+    
+}
+.tables .t1{
+    /*border: 2px solid black;*/
+    border-collapse: collapse;
+    background-color: #cc2e5d9d;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tables .t2{
+    /*border: 2px solid black;*/
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 248, 220, 0.568);
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.tables .t3{
+    /*border: 2px solid black;*/
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 248, 220, 0.568);
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tables .t4{
+    /*border: 2px solid black;*/
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 248, 220, 0.568);
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tables .t5{
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: rgba(255, 248, 220, 0.568);
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tables .left-coloumn{
+    padding: 20px 20px;
+    text-align: center;
+}
+.tables .right-coloumn{
+    text-align: left;
+    padding: 10px 30px;
+}
+.tables .t2 .left-coloumn{
+    /*border:2px solid black;*/
+    width: 250px;
+    background-color: rgba(255, 248, 220, 0.301);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.tables .t3 .left-coloumn{
+    /*border:2px solid black;*/
+    width: 250px;
+    background-color: rgba(255, 248, 220, 0.301);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.tables .t4 .left-coloumn{
+    /*border:2px solid black;*/
+    width: 250px;
+    background-color: rgba(255, 248, 220, 0.301);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.tables .t5 .left-coloumn{
+    /*border:2px solid black;*/
+    width: 250px;
+    background-color: rgba(255, 248, 220, 0.301);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}

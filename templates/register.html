@@ -1,0 +1,52 @@
+{%load static%}
+{%load widget_tweaks%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/registration.css' %}" />
+    <style>
+        body{
+            background-image: url("{% static '/image/registration_bcg.png' %}");
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+          <h2>Register Here</h2>
+        </div>
+        
+        <form class="form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {% render_field form.username class="input"%}
+                <label for="username" ><span class="span">Username</span></label>
+            </div>
+            <div class="form-group">
+                {% render_field form.email|attr:"required" class="input" %}
+                <label for="email" ><span class="span">Email</span></label>
+            </div>
+            <div class="form-group">
+                {% render_field form.password1 class="input"%}
+                <label for="password1" ><span class="span">Password</span></label>
+            </div> <div class="form-group">
+                {% render_field form.password2 class="input"%}
+                <label for="password2" ><span class="span">Confirm Password</span></label>
+            </div>
+            <div class="btn" >
+                <button>SIGN UP</button>
+            </div>
+
+            <div class="login_text">
+                <a href="{% url 'login_user'%}"><h4>Already Registered? Login Now</h4></a> 
+            </div>
+            {{form.errors}}
+        </form>
+        
+        
+      </div>
+</body>
+</html>

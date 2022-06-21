@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parsed Resume</title>
+        <link rel="stylesheet" type="text/css" href="{% static '/css/candidate_info.css' %}" />
+    </head>
+    <body>
+        <div class="contain-table">
+            <div class="tables">
+                <table class="t1">
+                    <tr>
+                        <th>CANDIDATE PROFILE</th>
+                    </tr>
+                </table>
+                <table class="t2">
+                    <tr>
+                        <td class="left-coloumn">NAME</td>
+                        <td class="right-coloumn">{{name}}</td>
+                    </tr>
+                </table>
+                <table class="t3" >
+                    <tr>
+                        <td class="left-coloumn">EMAIL-ID</td>
+                        <td class="right-coloumn">{{email}}</td>
+                    </tr>
+                </table>
+                <table class="t4">
+                    <tr>
+                        <td class="left-coloumn">CONTACT NUMBER</td>
+                        <td class="right-coloumn">{{mobile_no}}</td>
+                    </tr>
+                </table>
+                <table class="t5">
+                    <tr>
+                        <td class="left-coloumn">SKILLS</td>
+                        <td class="right-coloumn">
+                        {% for skill in skills %}
+                            {{skill}},
+                        {% endfor %}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
